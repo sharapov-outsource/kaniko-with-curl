@@ -1,4 +1,4 @@
-FROM gcr.io/kaniko-project/executor:latest AS executor
+FROM gcr.io/kaniko-project/executor:slim AS executor
 
 FROM alpine:edge as build
 RUN apk add --no-cache curl
